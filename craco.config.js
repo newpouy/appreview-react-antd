@@ -6,6 +6,9 @@ require('react-scripts/config/env');
 process.env.BROWSER = 'none';
 console.log(process.env.REACT_APP_API_SERVER_URL, 'process.env.API_SERVER_URL')
 module.exports = {
+  devServer: {
+    port: 3013
+  },
   env: {
     API_SERVER_URL: process.env.REACT_APP_API_SERVER_URL
   },
